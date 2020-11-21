@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/sonification-frontend/static/css/main.6dea0f05.chunk.css",
+    "main.js": "/sonification-frontend/static/js/main.07b86438.chunk.js",
+    "main.js.map": "/sonification-frontend/static/js/main.07b86438.chunk.js.map",
+    "runtime-main.js": "/sonification-frontend/static/js/runtime-main.ef26711c.js",
+    "runtime-main.js.map": "/sonification-frontend/static/js/runtime-main.ef26711c.js.map",
+    "static/js/2.763b3d0c.chunk.js": "/sonification-frontend/static/js/2.763b3d0c.chunk.js",
+    "static/js/2.763b3d0c.chunk.js.map": "/sonification-frontend/static/js/2.763b3d0c.chunk.js.map",
+    "static/js/3.7618a323.chunk.js": "/sonification-frontend/static/js/3.7618a323.chunk.js",
+    "static/js/3.7618a323.chunk.js.map": "/sonification-frontend/static/js/3.7618a323.chunk.js.map",
+    "index.html": "/sonification-frontend/index.html",
+    "static/css/main.6dea0f05.chunk.css.map": "/sonification-frontend/static/css/main.6dea0f05.chunk.css.map",
+    "static/js/2.763b3d0c.chunk.js.LICENSE.txt": "/sonification-frontend/static/js/2.763b3d0c.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ef26711c.js",
+    "static/js/2.763b3d0c.chunk.js",
+    "static/css/main.6dea0f05.chunk.css",
+    "static/js/main.07b86438.chunk.js"
+  ]
+}
