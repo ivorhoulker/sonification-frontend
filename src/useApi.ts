@@ -6,7 +6,7 @@ function useApi() {
   const getData = async () => {
     try {
       const response = await axios.get(
-        "https://covid-api.mmediagroup.fr/v1/cases",
+        "https://cors-anywhere.herokuapp.com/https://covid-api.mmediagroup.fr/v1/cases",
         { httpAgent: true }
       );
       setData(response);
