@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/sonification-frontend/static/css/main.6dea0f05.chunk.css",
-    "main.js": "/sonification-frontend/static/js/main.b4a01e91.chunk.js",
-    "main.js.map": "/sonification-frontend/static/js/main.b4a01e91.chunk.js.map",
+    "main.js": "/sonification-frontend/static/js/main.697f72b6.chunk.js",
+    "main.js.map": "/sonification-frontend/static/js/main.697f72b6.chunk.js.map",
     "runtime-main.js": "/sonification-frontend/static/js/runtime-main.1bde8013.js",
     "runtime-main.js.map": "/sonification-frontend/static/js/runtime-main.1bde8013.js.map",
-    "static/js/2.289b5574.chunk.js": "/sonification-frontend/static/js/2.289b5574.chunk.js",
-    "static/js/2.289b5574.chunk.js.map": "/sonification-frontend/static/js/2.289b5574.chunk.js.map",
+    "static/js/2.50c7c982.chunk.js": "/sonification-frontend/static/js/2.50c7c982.chunk.js",
+    "static/js/2.50c7c982.chunk.js.map": "/sonification-frontend/static/js/2.50c7c982.chunk.js.map",
     "static/js/3.8ad93d13.chunk.js": "/sonification-frontend/static/js/3.8ad93d13.chunk.js",
     "static/js/3.8ad93d13.chunk.js.map": "/sonification-frontend/static/js/3.8ad93d13.chunk.js.map",
     "index.html": "/sonification-frontend/index.html",
     "static/css/main.6dea0f05.chunk.css.map": "/sonification-frontend/static/css/main.6dea0f05.chunk.css.map",
-    "static/js/2.289b5574.chunk.js.LICENSE.txt": "/sonification-frontend/static/js/2.289b5574.chunk.js.LICENSE.txt"
+    "static/js/2.50c7c982.chunk.js.LICENSE.txt": "/sonification-frontend/static/js/2.50c7c982.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.1bde8013.js",
-    "static/js/2.289b5574.chunk.js",
+    "static/js/2.50c7c982.chunk.js",
     "static/css/main.6dea0f05.chunk.css",
-    "static/js/main.b4a01e91.chunk.js"
+    "static/js/main.697f72b6.chunk.js"
   ]
 }
