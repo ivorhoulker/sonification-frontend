@@ -6,18 +6,22 @@ function useApi() {
   const getData = async () => {
     try {
       const response = await axios.get(
-        "https://cors-anywhere.herokuapp.com/https://covid-api.mmediagroup.fr/v1/cases"
+        // "https://cors-anywhere.herokuapp.com/https://covid-api.mmediagroup.fr/v1/cases"
+        "https://api.kanye.rest/"
       );
-      setData(response);
-      console.log("Api response", response);
+      setData(response.data.quote);
+      console.log("Api response", response.data.quote);
     } catch (err) {
       console.error(err);
     }
   };
+  const refreshData = () => {
+    getData();
+  };
   useEffect(() => {
     getData();
   }, []);
-  return { data };
+  return { data, refreshData };
 }
 
 export default useApi;
