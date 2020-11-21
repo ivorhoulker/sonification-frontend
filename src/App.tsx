@@ -40,7 +40,6 @@ function App() {
   const { data, refreshData } = useApi();
   const [toneInitialized, setToneInitialized] = useState(false);
   const synth = new Tone.Synth().toDestination();
-  const bassSynth = new Tone.MembraneSynth().toDestination();
 
   const play = async () => {
     if (!toneInitialized) {
@@ -49,44 +48,15 @@ function App() {
       setToneInitialized(true);
     }
     stop();
-
-    const loop = new Tone.Loop((time) => {
-      // synth.triggerAttackRelease("G2", "4n", time);
-      bassSynth.triggerAttackRelease("c0", "16n", time);
-    }, "4n");
     const notesArray = sentenceToNotes(data);
     console.log(JSON.stringify(notesArray));
-    // const now = Tone.now();\
+
     new Tone.Part(function (time, value) {
-      //the value is an object which contains both the note and the velocity
       synth.triggerAttackRelease(value, "16n", time);
     }, notesArray).start(0);
-    // notesArray.forEach((wordNoteArray, idx) => {
-    //   const measure = scheduleMeasure(
-    //
-    //   );
-    //   Tone.Transport.scheduleOnce(
-    //     () => measure,
-    //     Tone.Time(idx).toBarsBeatsSixteenths()
-    //   );
-    //   // measure.start(Tone.Time(idx * 4).toBarsBeatsSixteenths());
-    //   // const seq = new Tone.Sequence(
-    //   //   function (time, note) {
-    //   //     console.log(note);
-    //   //     synth.triggerAttackRelease(note, "16n", time);
-    //   //     //straight quater notes
-    //   //   },
-    //   //   wordNoteArray,
-    //   //   "1n"
-    //   // );
-    //   // seq.start(Tone.Transport.seconds + idx);
-    // });
 
     Tone.Transport.bpm.value = 128;
     Tone.Transport.start();
-    // synth.triggerAttackRelease("C4", "8n", now);
-    // synth.triggerAttackRelease("E4", "8n", now + 0.5);
-    // synth.triggerAttackRelease("G4", "8n", now + 1);
   };
 
   const stop = async () => {
