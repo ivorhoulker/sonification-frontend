@@ -170,6 +170,15 @@ function App() {
     Tone.Transport.start();
   };
 
+  function censorText(text: string) {
+    const CHAR = "*";
+    const BANNED = ["屌你老母", "fat", "stupid", "potato", "hobbit"];
+    const replaceWithX = (match: string) => CHAR.repeat(match.length);
+    const filter = new RegExp(`\\b(${BANNED.join("|")})\\b`, "gi");
+
+    return text.replace(filter, replaceWithX);
+  }
+
   const stop = async () => {
     Tone.Transport.stop();
     Tone.Transport.cancel();
@@ -186,7 +195,8 @@ function App() {
 
   const handleInputChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
     e.preventDefault();
-    setSentence(e.target.value);
+    const censored = censorText(e.target.value);
+    setSentence(censored);
   };
   const handlePlaySentence = () => {
     playFromUserInput(sentence);
