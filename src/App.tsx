@@ -176,10 +176,9 @@ function App() {
     "呢套方案目前得到香港教育、電腦中文資訊處理等多方面嘅支持。基於粵拼嘅拼音輸入法亦都發展得相當成熟。除咗香港，台灣同日本亦都有使用呢套方案嘅輸入系統出售，內地都有民間人士據此製作嘅輸入方案。方案得到政府、商界、學界等廣泛認同。"
   );
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLElement>) => {
+  const handleInputChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
     e.preventDefault();
-    setSentence(e.target.innerText);
-    console.log("sentence is now ", sentence);
+    setSentence(e.target.value);
   };
   const handlePlaySentence = () => {
     playFromUserInput(sentence);
