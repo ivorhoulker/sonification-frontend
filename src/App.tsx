@@ -86,12 +86,20 @@ function App() {
   async function speakText(text: string) {
     try {
       setSpeaking(true);
-      await speech.speak({
+      speech.speak({
         text,
+        queue: false, // current speech will be interrupted,
+        listeners: {
+          onend: () => {
+            setSpeaking(false);
+            setSpeechPaused(false);
+          },
+        },
       });
-      setSpeaking(false);
     } catch (err) {
       console.error(err);
+      setSpeaking(false);
+      setSpeechPaused(false);
     }
   }
 
